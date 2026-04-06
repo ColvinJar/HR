@@ -9,7 +9,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: production
 
     steps:
       - name: Checkout
@@ -41,6 +40,18 @@ jobs:
           cp -r node_modules deploy/node_modules
           cd deploy
           zip -r ../release.zip .
+
+      - name: Validate Azure secrets
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+        run: |
+          test -n "$AZURE_CLIENT_ID"
+          test -n "$AZURE_CLIENT_SECRET"
+          test -n "$AZURE_SUBSCRIPTION_ID"
+          test -n "$AZURE_TENANT_ID"
 
       - name: Azure login
         uses: azure/login@v2
