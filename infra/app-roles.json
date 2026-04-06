@@ -1,0 +1,29 @@
+[
+  {
+    "allowedMemberTypes": ["User"],
+    "description": "Ansatt i kommunen",
+    "displayName": "Ansatt",
+    "id": "7dbd74e2-0471-4941-86e7-f7ac14efff75",
+    "isEnabled": true,
+    "origin": "Application",
+    "value": "ansatt"
+  },
+  {
+    "allowedMemberTypes": ["User"],
+    "description": "Leder i kommunen",
+    "displayName": "Leder",
+    "id": "98a24710-a9ce-4fb4-a194-cb179d2ef0bf",
+    "isEnabled": true,
+    "origin": "Application",
+    "value": "leder"
+  },
+  {
+    "allowedMemberTypes": ["User"],
+    "description": "HR i kommunen",
+    "displayName": "HR",
+    "id": "0896eef8-1ee3-4cc8-bc10-10f7fb041b46",
+    "isEnabled": true,
+    "origin": "Application",
+    "value": "hr"
+  }
+]

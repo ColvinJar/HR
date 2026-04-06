@@ -1,0 +1,67 @@
+name: Azure Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build app
+        run: npm run build
+
+      - name: Prepare production dependencies
+        run: npm prune --omit=dev
+
+      - name: Create deploy package
+        run: |
+          mkdir -p deploy
+          cp -r dist deploy/dist
+          cp -r dist-server deploy/dist-server
+          cp -r knowledge-sources deploy/knowledge-sources
+          cp package.json deploy/package.json
+          cp package-lock.json deploy/package-lock.json
+          cp -r node_modules deploy/node_modules
+          cd deploy
+          zip -r ../release.zip .
+
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy infrastructure
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az deployment group create \
+              --resource-group "${{ secrets.AZURE_RESOURCE_GROUP }}" \
+              --template-file infra/main.bicep \
+              --parameters @infra/main.parameters.json \
+              appName="${{ secrets.AZURE_APP_NAME }}" \
+              location="${{ secrets.AZURE_LOCATION }}" \
+              entraTenantId="${{ secrets.ENTRA_TENANT_ID }}" \
+              entraClientId="${{ secrets.ENTRA_CLIENT_ID }}"
+
+      - name: Deploy application package
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: ${{ secrets.AZURE_APP_NAME }}
+          package: release.zip

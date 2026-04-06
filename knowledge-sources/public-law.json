@@ -1,0 +1,50 @@
+{
+  "sourceId": "public-law",
+  "title": "Lov- og offentlige kilder",
+  "documents": [
+    {
+      "id": "doc-ferie-law",
+      "title": "Ferieloven",
+      "summary": "Primær lovkilde for ferie, feriepenger og ferieavvikling.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["ferie"],
+      "tags": ["ferieloven", "lov", "feriepenger"],
+      "updatedAt": "2025-12-01",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no",
+      "excerpts": [
+        {
+          "id": "ferie-law-1",
+          "heading": "Minimumskrav",
+          "text": "Ferieloven regulerer arbeidstakers rett til ferie og arbeidsgivers plikt til å sikre ferieavvikling.",
+          "relevanceHints": ["minimumskrav", "rett til ferie"]
+        }
+      ]
+    },
+    {
+      "id": "doc-worktime-law",
+      "title": "Arbeidsmiljøloven om arbeidstid",
+      "summary": "Primær lovkilde for arbeidstid, pauser, hviletid, nattarbeid og overtid.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["arbeidstid", "arbeidsmiljo"],
+      "tags": ["arbeidsmiljøloven", "arbeidstid", "overtid"],
+      "updatedAt": "2025-12-01",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no",
+      "excerpts": [
+        {
+          "id": "worktime-law-1",
+          "heading": "Lovens minimum",
+          "text": "Arbeidsmiljøloven setter minimumsgrenser for alminnelig arbeidstid, overtid, pauser og daglig og ukentlig hvile.",
+          "relevanceHints": ["minimum", "hviletid", "overtid"]
+        }
+      ]
+    }
+  ]
+}
