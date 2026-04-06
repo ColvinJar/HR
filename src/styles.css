@@ -404,6 +404,41 @@ textarea {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.template-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.template-card-button {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.template-card-button.active {
+  border-color: var(--brand);
+  box-shadow: 0 18px 45px rgba(11, 75, 68, 0.16);
+}
+
+.template-card-action {
+  margin: 0;
+  color: var(--brand);
+  font-weight: 600;
+}
+
+.template-preview {
+  display: grid;
+  gap: 1rem;
+  align-self: start;
+}
+
+.template-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .text-link {
   color: var(--brand);
   font-weight: 600;
@@ -469,6 +504,11 @@ textarea {
 @media (min-width: 980px) {
   .topnav {
     display: flex;
+  }
+
+  .template-layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+    align-items: start;
   }
 
   .bottom-nav {
