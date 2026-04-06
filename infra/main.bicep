@@ -44,7 +44,7 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
     httpsOnly: true
     siteConfig: {
       linuxFxVersion: 'NODE|20-lts'
-      appCommandLine: 'node dist-server/index.js'
+      appCommandLine: 'sh -c "cd /home/site/wwwroot && node dist-server/server/index.js"'
       alwaysOn: true
       ftpsState: 'Disabled'
       minTlsVersion: '1.2'

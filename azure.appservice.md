@@ -32,7 +32,7 @@
 1. Kjør `npm install`
 2. Kjør `npm run build`
 3. Deploy hele prosjektet med `dist`, `dist-server`, `web.config`, `package.json` og `node_modules` eller bruk bygg på server
-4. Start kommando: `npm run start:api`
+4. Start kommando: `sh -c 'cd /home/site/wwwroot; node dist-server/server/index.js'`
 
 ## Drift
 
