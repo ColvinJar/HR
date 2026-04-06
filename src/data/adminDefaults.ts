@@ -1,7 +1,7 @@
 import type { AdminConfig } from '../types/index.js';
 
 export const defaultAdminConfig: AdminConfig = {
-  municipalityName: 'Eksempel kommune',
+  municipalityName: 'Stavanger kommune',
   sectors: [
     'helse-velferd',
     'oppvekst-utdanning',

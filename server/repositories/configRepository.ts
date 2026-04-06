@@ -1,7 +1,7 @@
-import { defaultAdminConfig } from '../../src/data/adminDefaults.js';
+import { stavangerAdminConfig } from '../../src/data/stavangerAdminDefaults.js';
 import type { AdminConfig } from '../../shared/contracts.js';
 
-let currentConfig: AdminConfig = structuredClone(defaultAdminConfig);
+let currentConfig: AdminConfig = structuredClone(stavangerAdminConfig);
 
 export function getConfig() {
   return currentConfig;

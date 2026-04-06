@@ -1,15 +1,15 @@
-import { knowledgeCards } from '../../src/data/knowledge.js';
+import { stavangerKnowledgeCards } from '../../src/data/stavangerKnowledge.js';
 import type { KnowledgeCard, KnowledgeDocument } from '../../shared/contracts.js';
 import { getKnowledgeDocuments } from '../services/knowledgeIngestService.js';
-const cards: KnowledgeCard[] = knowledgeCards.map((card) => ({
+const cards: KnowledgeCard[] = stavangerKnowledgeCards.map((card) => ({
   ...card,
   backingDocumentIds:
     card.id === 'ferie-avvikling'
-      ? ['doc-ferie-local', 'doc-ferie-law']
+      ? ['doc-stavanger-feriepraksis', 'doc-ferie-law-main', 'doc-ks-ferie']
       : card.id === 'arbeidstid-overtid'
-        ? ['doc-worktime-turnus', 'doc-worktime-law']
+        ? ['doc-stavanger-arbeidstidpraksis', 'doc-at-overtid']
         : card.id === 'onboarding-ny-leder'
-          ? ['doc-onboarding-oppvekst']
+          ? ['doc-stavanger-ansatteinfo']
           : []
 }));
 

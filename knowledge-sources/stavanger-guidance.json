@@ -1,0 +1,78 @@
+{
+  "sourceId": "stavanger-guidance",
+  "title": "Stavanger kommune: ansatteinformasjon og lokale rutiner",
+  "documents": [
+    {
+      "id": "doc-stavanger-ansatteinfo",
+      "title": "Intern informasjon til ansatte i Stavanger kommune",
+      "summary": "Stavanger kommune opplyser offentlig at ansattinformasjon og interne rutiner ligger pa intranettet og kan naes via kommunal PC eller Firmaportal.",
+      "sourceTier": "lokal-rutine",
+      "owner": "Stavanger kommune",
+      "sector": "alle",
+      "topics": ["ferie", "arbeidstid", "onboarding", "lederstotte"],
+      "tags": ["stavanger", "intranett", "firmaportal", "ansatte"],
+      "updatedAt": "2025-11-17",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.stavanger.kommune.no/om-stavanger-kommune/intern-informasjon-til-ansatte-i-stavanger-kommune/",
+      "excerpts": [
+        {
+          "id": "stavanger-ansatteinfo-1",
+          "heading": "Hvor rutiner ligger",
+          "text": "All informasjon for ansatte ligger pa kommunens intranett. Det er der lokale rutiner for ferie, arbeidstid, personaloppfolging og andre interne forhold ma sjekkes.",
+          "relevanceHints": ["intranett", "lokale rutiner", "ferie", "arbeidstid"]
+        },
+        {
+          "id": "stavanger-ansatteinfo-2",
+          "heading": "Tilgang",
+          "text": "Intranett er tilgjengelig via kommunal PC eller Chromebook, eller pa mobil dersom den ansatte har installert appen Firmaportal.",
+          "relevanceHints": ["firmaportal", "mobil", "kommunal pc"]
+        }
+      ]
+    },
+    {
+      "id": "doc-stavanger-feriepraksis",
+      "title": "Stavanger kommune: lokal feriepraksis ma sjekkes internt",
+      "summary": "MVP-kilde som gjor det tydelig at Stavanger kommune bruker intranett/Firmaportal for interne rutiner og at feriesvar ma kombineres med lokal praksis.",
+      "sourceTier": "lokal-rutine",
+      "owner": "Stavanger kommune",
+      "sector": "alle",
+      "topics": ["ferie"],
+      "tags": ["ferie", "stavanger", "lokal praksis", "firmaportal"],
+      "updatedAt": "2025-11-17",
+      "sensitivity": "internal",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.stavanger.kommune.no/om-stavanger-kommune/intern-informasjon-til-ansatte-i-stavanger-kommune/",
+      "excerpts": [
+        {
+          "id": "stavanger-ferie-1",
+          "heading": "Ferie i praksis",
+          "text": "I Stavanger kommune ma leder og ansatt kontrollere lokal ferieplanlegging i intranett/Firmaportal. Kommunens detaljerte rutiner kommer i tillegg til ferieloven og tariffgrunnlaget.",
+          "relevanceHints": ["ferieplanlegging", "leder", "lokal rutine"]
+        }
+      ]
+    },
+    {
+      "id": "doc-stavanger-arbeidstidpraksis",
+      "title": "Stavanger kommune: arbeidstid og turnus ma vurderes mot lokal ordning",
+      "summary": "MVP-kilde som speiler at Stavanger bruker interne rutiner for arbeidstid, turnus og lokale kontaktpunkter.",
+      "sourceTier": "lokal-rutine",
+      "owner": "Stavanger kommune",
+      "sector": "helse-velferd",
+      "topics": ["arbeidstid", "fravaer", "arbeidsmiljo"],
+      "tags": ["arbeidstid", "turnus", "stavanger", "helse", "vikar"],
+      "updatedAt": "2025-11-17",
+      "sensitivity": "internal",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.stavanger.kommune.no/om-stavanger-kommune/intern-informasjon-til-ansatte-i-stavanger-kommune/",
+      "excerpts": [
+        {
+          "id": "stavanger-arbeidstid-1",
+          "heading": "Turnus og lokale ordninger",
+          "text": "I helsetjenester og drift ma arbeidstid, turnus, hviletid og bemanning ses mot kommunens interne ordninger og tjenestens faktiske behov.",
+          "relevanceHints": ["turnus", "hviletid", "bemanning", "helse-velferd"]
+        }
+      ]
+    }
+  ]
+}

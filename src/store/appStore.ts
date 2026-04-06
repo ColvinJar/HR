@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
-import { defaultAdminConfig } from '../data/adminDefaults';
+import { stavangerAdminConfig } from '../data/stavangerAdminDefaults';
 import type { AdminConfig, AuthConfig, AuthSession, SectorId, UserRole } from '../types';
 
 interface AppState {
@@ -26,7 +26,7 @@ export const useAppStore = create<AppState>()(
     (set) => ({
       selectedSector: 'helse-velferd',
       selectedRole: 'ansatt',
-      adminConfig: defaultAdminConfig,
+      adminConfig: stavangerAdminConfig,
       authConfig: null,
       authSession: null,
       configLoaded: false,

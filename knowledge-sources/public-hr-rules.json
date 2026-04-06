@@ -1,0 +1,84 @@
+{
+  "sourceId": "public-hr-rules",
+  "title": "Lov, tariff og offentlig veiledning for ferie og arbeidstid",
+  "documents": [
+    {
+      "id": "doc-ferie-law-main",
+      "title": "Ferieloven § 7 om hovedferie og restferie",
+      "summary": "Lovdata fastsetter hovedferie til 18 virkedager i hovedferieperioden 1. juni til 30. september, og restferie til 7 virkedager samlet innen feriearet.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["ferie"],
+      "tags": ["ferieloven", "hovedferie", "restferie", "sommerferie"],
+      "updatedAt": "2025-12-01",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no/lov/1988-04-29-21/%C2%A78",
+      "excerpts": [
+        {
+          "id": "ferieloven-main-1",
+          "heading": "Hovedferien",
+          "text": "Arbeidstaker kan kreve at hovedferie som omfatter 18 virkedager gis i hovedferieperioden 1. juni til 30. september.",
+          "relevanceHints": ["sommerferie", "18 virkedager", "3 uker", "hovedferie"]
+        },
+        {
+          "id": "ferieloven-main-2",
+          "heading": "Restferien",
+          "text": "Arbeidstaker kan kreve at restferien pa 7 virkedager gis samlet innenfor feriearet.",
+          "relevanceHints": ["restferie", "7 virkedager", "samlet"]
+        }
+      ]
+    },
+    {
+      "id": "doc-ks-ferie",
+      "title": "KS om ferie i kommunesektoren",
+      "summary": "KS beskriver ferie i kommunesektoren som kombinasjonen av lovbestemt ferie og avtalefestet ferie etter tariff.",
+      "sourceTier": "tariff",
+      "owner": "KS",
+      "sector": "alle",
+      "topics": ["ferie"],
+      "tags": ["ks", "tariff", "kommunal sektor", "5 uker ferie"],
+      "updatedAt": "2025-01-01",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.ks.no/fagomrader/arbeidsgiverpolitikk/lonn-og-tariff/sporsmal-og-svar-om-tariff/ferie/",
+      "excerpts": [
+        {
+          "id": "ks-ferie-1",
+          "heading": "Kommunal ferie",
+          "text": "I kommunesektoren ma ferieloven leses sammen med tariffavtalen. Mange ansatte har samlet ferie pa 30 virkedager, men tidspunktet for ferie ma fortsatt vurderes mot lov og lokal praksis.",
+          "relevanceHints": ["30 virkedager", "5 uker", "tariff", "kommunesektoren"]
+        }
+      ]
+    },
+    {
+      "id": "doc-at-overtid",
+      "title": "Arbeidstilsynet om overtid",
+      "summary": "Arbeidstilsynet understreker at overtid ikke skal vare en fast ordning og at ansatte skal ha minst 40 prosent tillegg for overtidsarbeid.",
+      "sourceTier": "arbeidstilsynet",
+      "owner": "Arbeidstilsynet",
+      "sector": "alle",
+      "topics": ["arbeidstid", "arbeidsmiljo"],
+      "tags": ["overtid", "arbeidstilsynet", "hviletid", "tillegg"],
+      "updatedAt": "2025-01-01",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.arbeidstilsynet.no/arbeidstid-og-organisering/arbeidstid/overtid/",
+      "excerpts": [
+        {
+          "id": "at-overtid-1",
+          "heading": "Nar overtid kan brukes",
+          "text": "Overtid kan bare brukes nar det foreligger et saerlig og tidsavgrenset behov. Overtid skal ikke vare en fast ordning.",
+          "relevanceHints": ["sarlig behov", "ikke fast ordning", "overtid"]
+        },
+        {
+          "id": "at-overtid-2",
+          "heading": "Overtidstillegg",
+          "text": "Ansatte skal ha et tillegg pa minst 40 prosent av lonnen for overtidsarbeid, med mindre tariff eller avtale gir bedre vilkar.",
+          "relevanceHints": ["40 prosent", "tillegg", "overtidstillegg"]
+        }
+      ]
+    }
+  ]
+}
