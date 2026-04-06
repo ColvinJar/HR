@@ -153,7 +153,7 @@ resource webAppAuth 'Microsoft.Web/sites/config@2022-09-01' = {
       preserveUrlFragmentsForLogins: false
       tokenStore: {
         enabled: true
-        tokenRefreshExtensionHours: 72.0
+        tokenRefreshExtensionHours: 72
         fileSystem: {}
         azureBlobStorage: {}
       }
