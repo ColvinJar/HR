@@ -87,5 +87,89 @@ resource webApp 'Microsoft.Web/sites@2023-12-01' = {
   }
 }
 
+resource webAppAuth 'Microsoft.Web/sites/config@2022-09-01' = {
+  name: '${webApp.name}/authsettingsV2'
+  properties: {
+    platform: {
+      enabled: true
+      runtimeVersion: '~1'
+    }
+    globalValidation: {
+      requireAuthentication: false
+      unauthenticatedClientAction: 'AllowAnonymous'
+      excludedPaths: [
+        '/health'
+      ]
+    }
+    httpSettings: {
+      requireHttps: true
+      routes: {
+        apiPrefix: '/.auth'
+      }
+      forwardProxy: {
+        convention: 'NoProxy'
+      }
+    }
+    identityProviders: {
+      azureActiveDirectory: {
+        enabled: true
+        registration: {
+          clientId: entraClientId
+          clientSecretSettingName: 'MICROSOFT_PROVIDER_AUTHENTICATION_SECRET'
+          openIdIssuer: 'https://sts.windows.net/${entraTenantId}/v2.0'
+        }
+        login: {
+          disableWWWAuthenticate: false
+        }
+        validation: {
+          allowedAudiences: []
+          defaultAuthorizationPolicy: {
+            allowedApplications: []
+            allowedPrincipals: {}
+          }
+          jwtClaimChecks: {}
+        }
+      }
+      apple: {
+        enabled: false
+      }
+      facebook: {
+        enabled: false
+      }
+      gitHub: {
+        enabled: false
+      }
+      google: {
+        enabled: false
+      }
+      legacyMicrosoftAccount: {
+        enabled: false
+      }
+      twitter: {
+        enabled: false
+      }
+    }
+    login: {
+      preserveUrlFragmentsForLogins: false
+      tokenStore: {
+        enabled: true
+        tokenRefreshExtensionHours: 72.0
+        fileSystem: {}
+        azureBlobStorage: {}
+      }
+      cookieExpiration: {
+        convention: 'FixedTime'
+        timeToExpiration: '08:00:00'
+      }
+      nonce: {
+        validateNonce: true
+        nonceExpirationInterval: '00:05:00'
+      }
+      routes: {}
+    }
+    clearInboundClaimsMapping: false
+  }
+}
+
 output webAppName string = webApp.name
 output defaultHostName string = webApp.properties.defaultHostName

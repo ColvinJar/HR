@@ -72,7 +72,18 @@ export function AppShell({ children }: PropsWithChildren) {
       {authSession ? (
         <section className="session-banner">
           <span>
-            Innlogget som <strong>{authSession.displayName}</strong>
+            {authSession.isAuthenticated ? (
+              <>
+                Innlogget som <strong>{authSession.displayName}</strong>
+              </>
+            ) : (
+              <>
+                Ikke logget inn.{' '}
+                {authSession.loginUrl ? (
+                  <a href={authSession.loginUrl}>Logg inn med Microsoft Entra ID</a>
+                ) : null}
+              </>
+            )}
           </span>
           <span>
             Rolle: <strong>{authSession.role.toUpperCase()}</strong> via {authSession.provider}

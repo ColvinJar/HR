@@ -155,8 +155,10 @@ export interface AuthSession {
   displayName: string;
   role: UserRole;
   provider: 'mock' | 'entra-id';
+  isAuthenticated: boolean;
   authenticatedAt: string;
   availableRoles: UserRole[];
+  loginUrl?: string;
 }
 
 export interface AuthSessionResponse {

@@ -66,7 +66,10 @@ export function getAuthConfig(): AuthConfig {
 export function resolveSession(request?: FastifyRequest): AuthSession {
   const config = getAuthConfig();
   if (config.provider === 'mock') {
-    return getSession();
+    return {
+      ...getSession(),
+      isAuthenticated: true
+    };
   }
 
   const clientPrincipal = parseClientPrincipal(
@@ -80,23 +83,26 @@ export function resolveSession(request?: FastifyRequest): AuthSession {
     .filter((value): value is UserRole => value !== null);
 
   const availableRoles = Array.from(new Set([directRole, ...claimRoles].filter(Boolean))) as UserRole[];
+  const isAuthenticated = Boolean(clientPrincipal || request?.headers['x-ms-client-principal-id']);
   const role = availableRoles[0] ?? 'ansatt';
   const name =
     (request?.headers['x-ms-client-principal-name'] as string | undefined) ??
     clientPrincipal?.userDetails ??
-    'Entra-bruker';
+    (isAuthenticated ? 'Entra-bruker' : 'Ikke logget inn');
   const userId =
     (request?.headers['x-ms-client-principal-id'] as string | undefined) ??
     clientPrincipal?.userId ??
-    'entra-user';
+    (isAuthenticated ? 'entra-user' : 'anonymous');
 
   return {
     userId,
     displayName: name,
     role,
     provider: 'entra-id',
+    isAuthenticated,
     authenticatedAt: new Date().toISOString(),
-    availableRoles: availableRoles.length > 0 ? availableRoles : [role]
+    availableRoles: availableRoles.length > 0 ? availableRoles : [role],
+    loginUrl: isAuthenticated ? undefined : '/.auth/login/aad?post_login_redirect_uri=/'
   };
 }
 
