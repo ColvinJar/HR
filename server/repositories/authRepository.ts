@@ -5,6 +5,7 @@ let session: AuthSession = {
   displayName: 'Ola Nordmann',
   role: 'ansatt',
   provider: 'mock',
+  isAuthenticated: true,
   authenticatedAt: new Date().toISOString(),
   availableRoles: ['ansatt', 'leder', 'hr']
 };

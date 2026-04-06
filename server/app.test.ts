@@ -28,6 +28,7 @@ describe('KommuneHR API', () => {
 
     expect(sessionResponse.statusCode).toBe(200);
     expect(sessionResponse.json().session.role).toBe('ansatt');
+    expect(sessionResponse.json().session.isAuthenticated).toBe(true);
 
     const ingestStatusResponse = await app.inject({
       method: 'GET',
