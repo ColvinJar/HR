@@ -11,7 +11,7 @@ describe('KommuneHR API', () => {
     });
 
     expect(configResponse.statusCode).toBe(200);
-    expect(configResponse.json().municipalityName).toBe('Eksempel kommune');
+    expect(configResponse.json().municipalityName).toBe('Stavanger kommune');
 
     const cardsResponse = await app.inject({
       method: 'GET',

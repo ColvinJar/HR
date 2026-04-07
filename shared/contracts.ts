@@ -109,12 +109,24 @@ export interface EscalationAdvice {
   contacts: string[];
 }
 
+export interface SourceHighlight {
+  documentId: string;
+  title: string;
+  owner: string;
+  sourceTier: SourceTier;
+  heading: string;
+  excerpt: string;
+  whyItMatters: string;
+  canonicalUrl?: string;
+}
+
 export interface ChatMessage {
   id: string;
   sender: 'user' | 'assistant';
   text: string;
   createdAt: string;
   sections?: AnswerSection[];
+  sourceHighlights?: SourceHighlight[];
   escalation?: EscalationAdvice;
   detectedSensitive?: boolean;
 }

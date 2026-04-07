@@ -23,6 +23,7 @@ export async function assistantRoutes(app: FastifyInstance) {
           effectiveRole,
           config.municipalityName,
           config.contactPoints,
+          config.sourcePriority,
           documents
         )
       };

@@ -31,6 +31,94 @@
       ]
     },
     {
+      "id": "doc-stavanger-lonn-feriepenger",
+      "title": "Stavanger kommune: lonn, lonnsslipp og feriepenger",
+      "summary": "Stavanger kommune peker ansatte til Min side og naermeste leder ved sporsmal om lonn, lonnsslipp og feriepenger.",
+      "sourceTier": "lokal-rutine",
+      "owner": "Stavanger kommune",
+      "sector": "alle",
+      "topics": ["ferie", "lederstotte"],
+      "tags": ["stavanger", "lonn", "feriepenger", "lonnsslipp", "min side"],
+      "updatedAt": "2025-11-17",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.stavanger.kommune.no/om-stavanger-kommune/intern-informasjon-til-ansatte-i-stavanger-kommune/",
+      "excerpts": [
+        {
+          "id": "stavanger-lonn-feriepenger-1",
+          "heading": "Feriepenger og lonnssporsmal",
+          "text": "Sporsmal om lonn, lonnsslipp og feriepenger skal tas med naermeste leder. Lonnsslipper finnes via Min side.",
+          "relevanceHints": ["feriepenger", "lonn", "lonnsslipp", "min side", "naermeste leder"]
+        }
+      ]
+    },
+    {
+      "id": "doc-stavanger-mintid",
+      "title": "Stavanger kommune: MinTid og Firmaportal",
+      "summary": "Stavanger kommune viser til at MinTid pa mobil forutsetter Firmaportal og kommunal tilgang.",
+      "sourceTier": "lokal-rutine",
+      "owner": "Stavanger kommune",
+      "sector": "alle",
+      "topics": ["arbeidstid", "onboarding"],
+      "tags": ["stavanger", "mintid", "firmaportal", "arbeidstid", "mobil"],
+      "updatedAt": "2025-11-17",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.stavanger.kommune.no/om-stavanger-kommune/intern-informasjon-til-ansatte-i-stavanger-kommune/",
+      "excerpts": [
+        {
+          "id": "stavanger-mintid-1",
+          "heading": "MinTid",
+          "text": "MinTid kan brukes via mobil nar den ansatte har kommunal tilgang og Firmaportal. Dette er relevant for arbeidstid og lokale registreringsrutiner.",
+          "relevanceHints": ["mintid", "firmaportal", "arbeidstid", "registrering", "mobil"]
+        }
+      ]
+    },
+    {
+      "id": "doc-stavanger-bedriftshelsetjeneste",
+      "title": "Stavanger kommune: bedriftshelsetjeneste",
+      "summary": "Stavanger kommune beskriver bedriftshelsetjenesten som et gratis tilbud for ansatte, ledere, verneombud og tillitsvalgte.",
+      "sourceTier": "lokal-rutine",
+      "owner": "Stavanger kommune",
+      "sector": "alle",
+      "topics": ["fravaer", "arbeidsmiljo", "lederstotte"],
+      "tags": ["stavanger", "bedriftshelsetjeneste", "bht", "sykefravaer", "verneombud"],
+      "updatedAt": "2025-11-17",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.stavanger.kommune.no/om-stavanger-kommune/intern-informasjon-til-ansatte-i-stavanger-kommune/",
+      "excerpts": [
+        {
+          "id": "stavanger-bht-1",
+          "heading": "BHT som lokal stotte",
+          "text": "Bedriftshelsetjenesten er et gratis tilbud til ansatte, ledere, verneombud og tillitsvalgte. Bestilling gjores via kommunens interne skjema.",
+          "relevanceHints": ["bht", "bedriftshelsetjeneste", "sykefravaer", "arbeidsmiljo", "lederstotte"]
+        }
+      ]
+    },
+    {
+      "id": "doc-stavanger-etisk-standard",
+      "title": "Stavanger kommune: etisk standard",
+      "summary": "Stavanger kommune ber ansatte drofte etiske dilemmaer og tvil med leder.",
+      "sourceTier": "lokal-rutine",
+      "owner": "Stavanger kommune",
+      "sector": "alle",
+      "topics": ["arbeidsmiljo", "lederstotte"],
+      "tags": ["stavanger", "etikk", "dilemma", "leder", "varsling"],
+      "updatedAt": "2023-12-29",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.stavanger.kommune.no/om-stavanger-kommune/etisk-standard/",
+      "excerpts": [
+        {
+          "id": "stavanger-etisk-standard-1",
+          "heading": "Droft tvil med leder",
+          "text": "Ved etiske dilemmaer eller tvil om hva som er riktig handlemate, bor forholdet droftes med naermeste leder.",
+          "relevanceHints": ["etikk", "dilemma", "leder", "tvil", "varsling"]
+        }
+      ]
+    },
+    {
       "id": "doc-stavanger-feriepraksis",
       "title": "Stavanger kommune: lokal feriepraksis ma sjekkes internt",
       "summary": "MVP-kilde som gjor det tydelig at Stavanger kommune bruker intranett/Firmaportal for interne rutiner og at feriesvar ma kombineres med lokal praksis.",

@@ -7,3 +7,6 @@ playwright-report/
 .DS_Store
 Thumbs.db
 *.log
+appservice-logs/
+appservice-logs*.zip
+authsettingsv2-patch.json

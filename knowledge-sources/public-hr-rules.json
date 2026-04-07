@@ -27,6 +27,12 @@
           "heading": "Restferien",
           "text": "Arbeidstaker kan kreve at restferien pa 7 virkedager gis samlet innenfor feriearet.",
           "relevanceHints": ["restferie", "7 virkedager", "samlet"]
+        },
+        {
+          "id": "ferieloven-main-3",
+          "heading": "Tilsetting etter 15. august",
+          "text": "Arbeidstaker som tiltrer etter 15. august kan ikke kreve at hovedferien legges i hovedferieperioden samme feriear.",
+          "relevanceHints": ["15 august", "hovedferie", "unntak", "sommerferie"]
         }
       ]
     },
@@ -49,6 +55,84 @@
           "heading": "Kommunal ferie",
           "text": "I kommunesektoren ma ferieloven leses sammen med tariffavtalen. Mange ansatte har samlet ferie pa 30 virkedager, men tidspunktet for ferie ma fortsatt vurderes mot lov og lokal praksis.",
           "relevanceHints": ["30 virkedager", "5 uker", "tariff", "kommunesektoren"]
+        }
+      ]
+    },
+    {
+      "id": "doc-ks-fastsetting-ferie",
+      "title": "KS: fastsetting av ferie",
+      "summary": "KS beskriver arbeidsgivers plikt til a drofte ferie og gi beskjed i god tid, samtidig som arbeidstaker kan kreve hovedferie i hovedferieperioden.",
+      "sourceTier": "tariff",
+      "owner": "KS",
+      "sector": "alle",
+      "topics": ["ferie"],
+      "tags": ["ks", "ferie", "fastsetting", "drofting", "varsel"],
+      "updatedAt": "2017-05-22",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.ks.no/fagomrader/lonn-og-tariff/hovedtariffavtalen/fastsetting-av-ferie/",
+      "excerpts": [
+        {
+          "id": "ks-fastsetting-ferie-1",
+          "heading": "Ferie fastsettes etter drofting",
+          "text": "Arbeidsgiver skal drofte ferie med arbeidstaker eller tillitsvalgt. Hvis partene ikke blir enige, kan arbeidsgiver fastsette tiden innenfor ferielovens grenser.",
+          "relevanceHints": ["ferie", "fastsetting", "drofting", "arbeidsgiver", "tillitsvalgt"]
+        },
+        {
+          "id": "ks-fastsetting-ferie-2",
+          "heading": "Varsel om ferie",
+          "text": "Arbeidstaker kan som hovedregel kreve beskjed om feriefastsetting tidlig, normalt senest to maneder for ferien starter.",
+          "relevanceHints": ["varsel", "to maneder", "feriefastsetting", "frist"]
+        }
+      ]
+    },
+    {
+      "id": "doc-ks-overforing-ferie",
+      "title": "KS: overforing av ferie",
+      "summary": "KS forklarer at overforing av ferie krever avtale, og at det finnes egne regler nar ferie ikke er avviklet pa grunn av sykdom eller permisjon.",
+      "sourceTier": "tariff",
+      "owner": "KS",
+      "sector": "alle",
+      "topics": ["ferie", "fravaer"],
+      "tags": ["ks", "overforing av ferie", "sykdom", "permisjon"],
+      "updatedAt": "2015-02-10",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.ks.no/fagomrader/lonn-og-tariff/hovedtariffavtalen/overforing-av-ferie/",
+      "excerpts": [
+        {
+          "id": "ks-overforing-ferie-1",
+          "heading": "Overforing krever avtale",
+          "text": "Overforing av ferie skal avtales skriftlig innenfor rammene i ferieloven og tariffavtalen.",
+          "relevanceHints": ["overforing", "ferie", "avtale", "skriftlig"]
+        },
+        {
+          "id": "ks-overforing-ferie-2",
+          "heading": "Sykdom eller permisjon",
+          "text": "Hvis ferie ikke er avviklet pa grunn av sykdom eller foreldrepermisjon, ma overforing vurderes etter egne regler.",
+          "relevanceHints": ["sykdom", "permisjon", "overforing", "ikke avviklet ferie"]
+        }
+      ]
+    },
+    {
+      "id": "doc-at-feriepenger",
+      "title": "Arbeidstilsynet om feriepenger",
+      "summary": "Arbeidstilsynet beskriver feriepenger som opptjent aret for ferien og viser praktiske satser for feriepengegrunnlaget.",
+      "sourceTier": "arbeidstilsynet",
+      "owner": "Arbeidstilsynet",
+      "sector": "alle",
+      "topics": ["ferie"],
+      "tags": ["feriepenger", "opptjening", "10,2 prosent", "12 prosent"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.arbeidstilsynet.no/arbeidsforhold/ferie/feriepenger/",
+      "excerpts": [
+        {
+          "id": "at-feriepenger-1",
+          "heading": "Opptjening",
+          "text": "Feriepenger opptjenes aret for ferien og beregnes av feriepengegrunnlaget. Vanlig minstesats er 10,2 prosent, eller 12 prosent nar arbeidstaker har fem ferieuker.",
+          "relevanceHints": ["feriepenger", "opptjening", "10,2 prosent", "12 prosent", "5 uker"]
         }
       ]
     },
@@ -77,6 +161,84 @@
           "heading": "Overtidstillegg",
           "text": "Ansatte skal ha et tillegg pa minst 40 prosent av lonnen for overtidsarbeid, med mindre tariff eller avtale gir bedre vilkar.",
           "relevanceHints": ["40 prosent", "tillegg", "overtidstillegg"]
+        }
+      ]
+    },
+    {
+      "id": "doc-at-arbeidstid-overview",
+      "title": "Arbeidstilsynet om arbeidstid",
+      "summary": "Arbeidstilsynet oppsummerer alminnelig arbeidstid, pauser, hviletid og arbeidstidsordninger.",
+      "sourceTier": "arbeidstilsynet",
+      "owner": "Arbeidstilsynet",
+      "sector": "alle",
+      "topics": ["arbeidstid", "arbeidsmiljo"],
+      "tags": ["arbeidstid", "pauser", "hviletid", "arbeidsfri"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.arbeidstilsynet.no/arbeidstid-og-organisering/arbeidstid/",
+      "excerpts": [
+        {
+          "id": "at-arbeidstid-1",
+          "heading": "Arbeidstid og arbeidsfri",
+          "text": "Arbeidstid ma vurderes mot grenser for alminnelig arbeidstid, pauser, daglig og ukentlig arbeidsfri og eventuelle arbeidstidsordninger.",
+          "relevanceHints": ["arbeidstid", "pauser", "hviletid", "arbeidsfri", "arbeidstidsordning"]
+        }
+      ]
+    },
+    {
+      "id": "doc-nav-sykefravaer-oppfolging",
+      "title": "NAV: oppfolging av sykmeldte",
+      "summary": "NAV beskriver arbeidsgivers oppfolgingsansvar, oppfolgingsplan, dialogmoter og samarbeid med NAV.",
+      "sourceTier": "annen-offentlig",
+      "owner": "NAV",
+      "sector": "alle",
+      "topics": ["fravaer", "arbeidsmiljo", "lederstotte"],
+      "tags": ["sykefravaer", "sykmeldt", "oppfolging", "dialogmote", "NAV"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.nav.no/arbeidsgiver/oppfolging-sykmeldte",
+      "excerpts": [
+        {
+          "id": "nav-sykefravaer-1",
+          "heading": "Arbeidsgivers oppfolging",
+          "text": "Arbeidsgiver har ansvar for a folge opp sykmeldte, lage oppfolgingsplan og gjennomfore dialogmote 1 innen 7 uker nar det er aktuelt.",
+          "relevanceHints": ["sykefravaer", "sykmeldt", "oppfolging", "dialogmote", "7 uker"]
+        },
+        {
+          "id": "nav-sykefravaer-2",
+          "heading": "NAVs dialogmote",
+          "text": "NAV kan innkalle til dialogmote 2 senest innen 26 uker hvis den ansatte fortsatt er sykmeldt og det er behov for videre oppfolging.",
+          "relevanceHints": ["dialogmote 2", "26 uker", "NAV", "sykmeldt"]
+        }
+      ]
+    },
+    {
+      "id": "doc-nav-oppfolgingsplan",
+      "title": "NAV: oppfolgingsplan ved sykefravaer",
+      "summary": "NAV beskriver oppfolgingsplanen som arbeidsgiver og arbeidstaker lager sammen tidlig i sykefravaeret.",
+      "sourceTier": "annen-offentlig",
+      "owner": "NAV",
+      "sector": "alle",
+      "topics": ["fravaer", "lederstotte"],
+      "tags": ["oppfolgingsplan", "sykmelding", "tilrettelegging", "4 uker"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://www.nav.no/arbeidsgiver/oppfolgingsplan",
+      "excerpts": [
+        {
+          "id": "nav-oppfolgingsplan-1",
+          "heading": "Frist for oppfolgingsplan",
+          "text": "Oppfolgingsplan skal som hovedregel lages sammen med den sykmeldte senest innen 4 uker.",
+          "relevanceHints": ["oppfolgingsplan", "4 uker", "sykmeldt", "frist"]
+        },
+        {
+          "id": "nav-oppfolgingsplan-2",
+          "heading": "Innhold i planen",
+          "text": "Planen skal handle om arbeidsoppgaver, arbeidsevne, tilrettelegging og tiltak som kan bidra til retur eller delvis arbeid.",
+          "relevanceHints": ["tilrettelegging", "arbeidsevne", "arbeidsoppgaver", "tiltak"]
         }
       ]
     }

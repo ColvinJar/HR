@@ -59,6 +59,35 @@ export const stavangerKnowledgeCards: KnowledgeCard[] = [
     ]
   },
   {
+    id: 'sykefravaer-oppfolging',
+    title: 'Sykefravaer og oppfolging i Stavanger kommune',
+    category: 'fravaer',
+    sector: 'alle',
+    summary:
+      'Kobler NAVs frister for oppfolging av sykmeldte med Stavanger kommunes lokale stotte via lederlinje og bedriftshelsetjeneste.',
+    tags: ['sykefravaer', 'oppfolgingsplan', 'dialogmote', 'bht', 'stavanger'],
+    sources: [
+      {
+        title: 'NAV om oppfolging av sykmeldte',
+        type: 'annen-offentlig',
+        owner: 'NAV',
+        href: 'https://www.nav.no/arbeidsgiver/oppfolging-sykmeldte'
+      },
+      {
+        title: 'NAV om oppfolgingsplan',
+        type: 'annen-offentlig',
+        owner: 'NAV',
+        href: 'https://www.nav.no/arbeidsgiver/oppfolgingsplan'
+      },
+      {
+        title: 'Stavanger kommune: bedriftshelsetjeneste',
+        type: 'lokal-rutine',
+        owner: 'Stavanger kommune',
+        href: 'https://www.stavanger.kommune.no/om-stavanger-kommune/intern-informasjon-til-ansatte-i-stavanger-kommune/'
+      }
+    ]
+  },
+  {
     id: 'onboarding-ny-leder',
     title: 'Onboarding og tilgang i Stavanger kommune',
     category: 'onboarding',

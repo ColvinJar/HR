@@ -15,6 +15,7 @@ export function generateAssistantMessage(
     role,
     stavangerAdminConfig.municipalityName,
     contactPoints,
+    stavangerAdminConfig.sourcePriority,
     listDocuments()
   );
 }

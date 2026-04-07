@@ -37,6 +37,12 @@ Løsningen modellerer blant annet:
 - dokumenter med tema, sektor, tilgangsroller, sensitivitet og utdrag for senere retrieval/RAG
 - autentisert sesjon med rolle og provider, klar for senere Entra ID eller annen SSO
 
+## Dokumentstyrt Chat
+
+Chatten er nå mer dokumentstyrt enn den første regelmotoren. Backend søker i utdrag fra `knowledge-sources`, velger relevante treff per spørsmål og viser hvilke dokumentutdrag som faktisk ble brukt i svaret. Stavanger-oppsettet inneholder foreløpig kilder fra Stavanger kommune, Lovdata, KS, Arbeidstilsynet og NAV for ferie, feriepenger, arbeidstid, overtid, hviletid og sykefraværsoppfølging.
+
+Dette er fortsatt ikke en fri LLM-chat. Den bruker deterministisk retrieval og kuraterte svarmønstre for å gi mer konkrete og tryggere svar, og er klargjort for senere semantisk søk, vektorindeks og modellgenerering.
+
 ## Sikkerhet og personvern
 
 - Chatten advarer mot deling av sensitive personopplysninger
@@ -171,6 +177,6 @@ Anbefalt modell videre:
 ## Antakelser I Denne MVP-en
 
 - Prosjektmappen var tom ved oppstart, så appen er satt opp fra bunnen.
-- Chatmotoren er fortsatt en trygg, regelbasert MVP bak et ekte API-endepunkt, klar for senere LLM- eller RAG-integrasjon.
-- Dokumentingest er JSON-basert i denne fasen. Neste steg er ekte dokumenthenting, indeksering og autorisasjon.
+- Chatmotoren er en dokumentstyrt MVP med retrieval fra lokale JSON-kilder og kuraterte svarmønstre, klar for senere LLM- eller RAG-integrasjon.
+- Dokumentingest er JSON-basert i denne fasen. Neste steg er ekte dokumenthenting, indeksering, kildeversjonering og autorisasjon.
 - Rollemodellen bruker en mock-session i backend. Neste steg er å erstatte denne med Entra ID eller tilsvarende identitetsleverandør.

@@ -45,6 +45,122 @@
           "relevanceHints": ["minimum", "hviletid", "overtid"]
         }
       ]
+    },
+    {
+      "id": "doc-ferieloven-feriepenger",
+      "title": "Ferieloven om feriepenger",
+      "summary": "Lovdata er primarkilden for retten til feriepenger og opptjening av feriepenger.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["ferie"],
+      "tags": ["ferieloven", "feriepenger", "opptjening", "feriepengegrunnlag"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no/lov/1988-04-29-21/%C2%A710",
+      "excerpts": [
+        {
+          "id": "ferieloven-feriepenger-1",
+          "heading": "Feriepenger",
+          "text": "Ferieloven regulerer feriepenger, feriepengegrunnlag og utbetaling. Tariff eller avtale kan gi bedre vilkar enn lovens minimum.",
+          "relevanceHints": ["feriepenger", "feriepengegrunnlag", "opptjening", "utbetaling"]
+        }
+      ]
+    },
+    {
+      "id": "doc-aml-alminnelig-arbeidstid",
+      "title": "Arbeidsmiljoloven om alminnelig arbeidstid",
+      "summary": "Lovdata er primarkilden for de ordinare grensene for arbeidstid.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["arbeidstid"],
+      "tags": ["arbeidsmiljoloven", "arbeidstid", "9 timer", "40 timer"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no/lov/2005-06-17-62/%C2%A710-4",
+      "excerpts": [
+        {
+          "id": "aml-alminnelig-arbeidstid-1",
+          "heading": "Alminnelig arbeidstid",
+          "text": "Hovedregelen for alminnelig arbeidstid er inntil 9 timer i lopet av 24 timer og 40 timer i lopet av 7 dager.",
+          "relevanceHints": ["arbeidstid", "9 timer", "40 timer", "lovens minimum"]
+        }
+      ]
+    },
+    {
+      "id": "doc-aml-arbeidsfri",
+      "title": "Arbeidsmiljoloven om daglig og ukentlig arbeidsfri",
+      "summary": "Lovdata er primarkilden for krav til daglig og ukentlig arbeidsfri.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["arbeidstid", "arbeidsmiljo"],
+      "tags": ["arbeidsmiljoloven", "hviletid", "arbeidsfri", "11 timer", "35 timer"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no/lov/2005-06-17-62/%C2%A710-8",
+      "excerpts": [
+        {
+          "id": "aml-arbeidsfri-1",
+          "heading": "Daglig og ukentlig arbeidsfri",
+          "text": "Arbeidstaker skal som hovedregel ha minst 11 timer sammenhengende arbeidsfri i lopet av 24 timer og 35 timer sammenhengende arbeidsfri i lopet av 7 dager.",
+          "relevanceHints": ["hviletid", "arbeidsfri", "11 timer", "35 timer"]
+        }
+      ]
+    },
+    {
+      "id": "doc-aml-pauser",
+      "title": "Arbeidsmiljoloven om pauser",
+      "summary": "Lovdata er primarkilden for retten til pauser i arbeidsdagen.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["arbeidstid", "arbeidsmiljo"],
+      "tags": ["arbeidsmiljoloven", "pause", "pauser", "5,5 timer", "8 timer"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no/lov/2005-06-17-62/%C2%A710-9",
+      "excerpts": [
+        {
+          "id": "aml-pauser-1",
+          "heading": "Rett til pause",
+          "text": "Arbeidstaker skal ha minst en pause hvis arbeidsdagen varer mer enn 5,5 timer. Hvis arbeidsdagen er minst 8 timer, skal pausene samlet vaere minst en halv time.",
+          "relevanceHints": ["pause", "pauser", "5,5 timer", "8 timer", "halv time"]
+        }
+      ]
+    },
+    {
+      "id": "doc-aml-overtid-law",
+      "title": "Arbeidsmiljoloven om overtid",
+      "summary": "Lovdata er primarkilden for nar overtid kan brukes og minstekrav til overtidsbetaling.",
+      "sourceTier": "lovdata",
+      "owner": "Lovdata",
+      "sector": "alle",
+      "topics": ["arbeidstid", "arbeidsmiljo"],
+      "tags": ["arbeidsmiljoloven", "overtid", "40 prosent", "saerlig behov"],
+      "updatedAt": "2026-04-06",
+      "sensitivity": "public",
+      "accessRoles": ["ansatt", "leder", "hr"],
+      "canonicalUrl": "https://lovdata.no/lov/2005-06-17-62/%C2%A710-6",
+      "excerpts": [
+        {
+          "id": "aml-overtid-law-1",
+          "heading": "Vilkaret for overtid",
+          "text": "Overtid skal bare brukes nar det foreligger et saerlig og tidsavgrenset behov.",
+          "relevanceHints": ["overtid", "saerlig behov", "tidsavgrenset"]
+        },
+        {
+          "id": "aml-overtid-law-2",
+          "heading": "Overtidstillegg",
+          "text": "For overtidsarbeid skal det betales et tillegg pa minst 40 prosent.",
+          "relevanceHints": ["overtidstillegg", "40 prosent", "overtid"]
+        }
+      ]
     }
   ]
 }
